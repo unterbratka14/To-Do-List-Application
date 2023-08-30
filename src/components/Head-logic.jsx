@@ -10,8 +10,7 @@ const HeadLogic = ({ list, setList }) => {
 
   const clickHandler = (event) => {
     event.preventDefault();
-    const task_list = [...list, { text: task, completed: false }];
-    setList(task_list);
+    setList([...list, task]);
     setTask("");
   };
 

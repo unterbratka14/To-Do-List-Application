@@ -1,9 +1,11 @@
-const BodyList = (list) => {
+const BodyList = ({ list }) => {
   return (
     <div>
-      {list.map((task) => {
-        <h1>{task.text}</h1>;
-      })}
+      <h1>
+        {list.map((task) => (
+          <h1>{task}</h1>
+        ))}
+      </h1>
     </div>
   );
 };
