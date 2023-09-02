@@ -28,6 +28,7 @@ const HeadLogic = ({ list, setList }) => {
         <button
           className="w-1/5 border border-black rounded h-12"
           type="button"
+          disabled={task.length === 0}
           onClick={clickHandler}
         >
           Add Task

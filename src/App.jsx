@@ -1,5 +1,6 @@
 import BodyList from "./components/Body-list";
 import HeadLogic from "./components/Head-logic";
+
 import { useState } from "react";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <HeadLogic list={list} setList={setList} />
-      <BodyList list={list} />
+      <BodyList list={list} setList={setList} />
     </div>
   );
 }
